@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link href="./modal.js"/>
 </head>
 <body>
     <header>
@@ -60,7 +59,15 @@
         <section class="main-headline">
             <h1 class="main-headline-text">Ефективні рішення <br/> для вашого бізнесу</h1>
             <div class="bautton-block">
-                <button type="button" class="order-button">Замовити послугу</button>
+                <button type="button" class="order-button" data-modal-open>Замовити послугу</button>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <p>
+                            Раді вас вітати!
+                        </p>
+                        <button data-modal-close>Закрити</button>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="advantages-main">
@@ -402,5 +409,6 @@
             </ul>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
