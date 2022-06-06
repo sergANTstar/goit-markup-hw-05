@@ -29,9 +29,10 @@ h1, h2, h3, h4, p, a {
     width: 100%;
     top: 0;
     left: 0;
-    border-bottom: 1px solid #ECECEC;
+    outline: 1px solid #ECECEC;
     background-color: var(--backround-color);
     z-index: 1;
+
 }
 
 .header-main{
