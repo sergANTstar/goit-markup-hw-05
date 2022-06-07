@@ -38,9 +38,9 @@ h1, h2, h3, h4, p, a {
 
 .header-main{
     display: inline-flex;
+    
     justify-content: center;
     align-items: center;
-   
 }
 
 .list{
@@ -131,11 +131,7 @@ body{
     border-radius: 4px;
     background-color: var(--accent-color);
     opacity: 0; 
-
-    transition-property: opacity, color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 250ms;
+   
 }
     
 
@@ -202,14 +198,17 @@ body{
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: #2F303A solid 40%;
-    background-image: url("../images/main.jpg");
+    background-image: linear-gradient(to right ,rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0)), url("../images/main.jpg");
     background-repeat: no-repeat;
     background-size: cover;   
 }
+.headline {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 
 .main-headline-text{
-    padding-top: 200px;
     color: var(--backround-color);
 
     font-weight: 900;
@@ -255,14 +254,17 @@ body{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
-    
+    opacity: 1;
 
     transition-property: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 250ms;
-    
+    z-index: 2;
+}
+
+textarea {
+    resize: none;
 }
 
 .backdrop.is-hidden {
@@ -276,8 +278,8 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
 
-    min-height: 581px;
-    min-width: 528px;
+    height: 581px;
+    width: 528px;
     padding: 15px;
 
     background-color: var(--backround-color);
@@ -314,25 +316,15 @@ body{
     height: 70px;
     padding-top: 27px;
     padding-bottom: 27px;
+
+    font-weight: 700;
     
     text-align: center;
     text-transform: uppercase;
 
-    transform: translateY(100%);
-
-    transition-property:  transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 250ms;
-}
+ }
 
 
-
-.text-hiden-wedo:hover .text-hiden-we,
-.text-hiden-wedo:focus .text-hiden-we {
-    transform: translateY(0%);
-
-}
 
 .icon-box {
     display: flex;
@@ -641,13 +633,12 @@ address {font-style: normal;}
     margin-right: 30px;
     margin-bottom: 30px;
     cursor: pointer;
-   
 
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 250ms;
- 
+   
        
 }
 
