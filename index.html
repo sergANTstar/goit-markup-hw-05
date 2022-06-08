@@ -13,15 +13,16 @@
     <header>
         <div class="main-header-block">
             <div class="container">
-                <ul class="header-main list">
-                    <li>
+                <div class="header-main list">
+                    <div>
                         <a href="./index.html" lang="en" class="logo-black"><span class="logo-web">Web</span>Studio</a>
-                    </li>                           
-                    <li>
+                    </div>                           
                         <nav>
                             <ul class="site-nav list">
                                 <li class="item-nav">
-                                    <a href="./index.html" class="site-nav-link">Студія</a>
+                                    <div clas="p">
+                                        <a href="./index.html" class="site-nav-link site-nav-link-a">Студія</a>
+                                     </div>
                                 </li>
                                 <li class="item-nav">
                                     <a href="./portfolio.html" class="site-nav-link">Портфоліо</a>
@@ -31,7 +32,6 @@
                                 </li>
                             </ul>
                         </nav>
-                    <li>
                         <ul class=" header-contact-ul list">
                             <li class="site-nav-item">
                                 <a href="mailto:info@devstudio.com" class="contacts-nav-link">
@@ -50,8 +50,8 @@
                                 </a>
                             </li>
                         </ul>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -64,7 +64,24 @@
                     <div class="backdrop is-hidden" data-modal>
                         <div class="modal">
                             <p>Залиште свої дані і ми вам зателефонуємо</p>
-                            
+                            <form class="js-speaker-form">
+                                <label for="name">Ім'я</label>
+                                <input type="text" name="name" id="name"/>
+
+                                <label for="tel">Телефон</label>
+                                <input type="tel" name="tel" id="tel" autofocus  />
+
+                                <label for="mail">Пошта</label>
+                                <input type="mail" name="mail" id="mail" />
+
+                                <label for="comments">Коментарі</label>
+                                <textarea name="comments" id="comments" cols="50" rows="7" placeholder="Введіть повідомлення"></textarea>
+
+                                <label for="consent">Погоджуюсь із розсилкою та приймаю <span href="https://goit.ua/agreement/">Умови договору</span></label>
+                                <input type="checkbox" id="consent" name="consent"/>
+
+
+                            </form>
                             <button type="submit" data-modal-close>Відправити</button>
                         </div>
                     </div>
@@ -359,8 +376,8 @@
     </main>
     <footer class="footer">
         <div class="container ">
-            <ul class="footer-maine list">
-                <li class="footer-maine-li">
+            <div class="footer-maine list">
+                <div class="footer-maine-li">
                     <a href="./index.html" lang="en" class="logo-wight"><span class="logo-web">Web</span>Studio</a>
                     <address class="list">
                         <ul class="footer-addresslist list">
@@ -373,8 +390,8 @@
                             </li>
                         </ul>
                     </address>
-                </li>
-                <li class="footer-maine-li">
+                </div>
+                <div class="footer-maine-li">
                     <a class="footer-header">Приєднуйтесь</a>
                     <ul class="icon-social-networks-ul list">
                         <li class="icon-social-networks-li">
@@ -406,8 +423,10 @@
                             </a>
                         </li>
                     </ul>
-                </li>
-            </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
        <script src="./js/modal.js"></script>
        <script>
            (() =>{
