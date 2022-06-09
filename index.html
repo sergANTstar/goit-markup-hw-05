@@ -64,22 +64,26 @@
                         <div class="modal">
                             <p>Залиште свої дані і ми вам зателефонуємо</p>
                             <form class="js-speaker-form">
-                                <label for="name">Ім'я</label>
-                                <input type="text" name="name" id="name"/>
-
-                                <label for="tel">Телефон</label>
-                                <input type="tel" name="tel" id="tel" autofocus  />
-
-                                <label for="mail">Пошта</label>
-                                <input type="mail" name="mail" id="mail" />
-
-                                <label for="comments">Коментарі</label>
-                                <textarea name="comments" id="comments" cols="50" rows="7" placeholder="Введіть повідомлення"></textarea>
-
-                                <label for="consent">Погоджуюсь із розсилкою та приймаю <span href="https://goit.ua/agreement/">Умови договору</span></label>
-                                <input type="checkbox" id="consent" name="consent"/>
-
-
+                                <div>
+                                    <label for="name">Ім'я</label>
+                                    <input type="text" name="name" id="name"/>
+                                </div>
+                                <div>
+                                    <label for="tel">Телефон</label>
+                                    <input type="tel" name="tel" id="tel" autofocus  />
+                                </div>
+                                <div>
+                                    <label for="mail">Пошта</label>
+                                    <input type="email" name="mail" id="mail" />
+                                </div>
+                                <div>
+                                    <label for="comments">Коментарі</label>
+                                    <textarea name="comments" id="comments" cols="50" rows="7" placeholder="Введіть повідомлення"></textarea>
+                                </div>
+                                <div>
+                                    <label for="consent">Погоджуюсь із розсилкою та приймаю <span href="https://goit.ua/agreement/">Умови договору</span></label>
+                                    <input type="checkbox" id="consent" name="consent"/>
+                                </div>
                             </form>
                             <button type="submit" data-modal-close>Відправити</button>
                         </div>
